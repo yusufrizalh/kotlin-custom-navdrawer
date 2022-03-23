@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:orientation="horizontal"
+    android:padding="6dp"
+    android:paddingStart="12dp">
+
+    <ImageView
+        android:id="@+id/navigation_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/ic_menu_manage" />
+
+    <TextView
+        android:id="@+id/navigation_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:text="Custom Navigation Drawer Row"
+        android:textSize="18sp" />
+
+</LinearLayout>
