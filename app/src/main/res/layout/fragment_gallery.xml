@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,15 +10,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="GALLERY"
-            android:textSize="24sp" />
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            app:tabMaxWidth="0dp"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:textAllCaps="false" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/tabs_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
     </LinearLayout>
 
 </FrameLayout>
