@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/option_search"
+        android:icon="@drawable/icon_search"
+        android:title="Search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/option_settings"
+        android:icon="@drawable/icon_settings_options"
+        android:title="Settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/option_status"
+        android:icon="@drawable/icon_status"
+        android:title="Status"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/option_database"
+        android:icon="@drawable/icon_storage"
+        android:title="Database"
+        app:showAsAction="ifRoom" />
+
+</menu>

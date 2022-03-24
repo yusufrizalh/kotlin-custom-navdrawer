@@ -4,14 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/android-projects/SecondProject/app/src/main/res/drawable/logo.xml" value="0.1235" />
+        <entry key="..\:/android-projects/SecondProject/app/src/main/res/layout/activity_database.xml" value="0.25" />
         <entry key="..\:/android-projects/SecondProject/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/android-projects/SecondProject/app/src/main/res/layout/activity_material_add.xml" value="0.33" />
+        <entry key="..\:/android-projects/SecondProject/app/src/main/res/layout/activity_material_detail.xml" value="0.22" />
         <entry key="..\:/android-projects/SecondProject/app/src/main/res/layout/fragment_activity.xml" value="0.19583333333333333" />
         <entry key="..\:/android-projects/SecondProject/app/src/main/res/layout/fragment_gallery.xml" value="0.22" />
         <entry key="..\:/android-projects/SecondProject/app/src/main/res/layout/fragment_home.xml" value="0.19583333333333333" />
         <entry key="..\:/android-projects/SecondProject/app/src/main/res/layout/fragment_settings.xml" value="0.19583333333333333" />
         <entry key="..\:/android-projects/SecondProject/app/src/main/res/layout/fragment_vacation.xml" value="0.19583333333333333" />
         <entry key="..\:/android-projects/SecondProject/app/src/main/res/layout/fragment_workshop.xml" value="0.19583333333333333" />
+        <entry key="..\:/android-projects/SecondProject/app/src/main/res/layout/item_material.xml" value="0.33" />
         <entry key="..\:/android-projects/SecondProject/app/src/main/res/layout/row_nav_drawer.xml" value="0.25" />
+        <entry key="..\:/android-projects/SecondProject/app/src/main/res/menu/options_add.xml" value="0.19583333333333333" />
+        <entry key="..\:/android-projects/SecondProject/app/src/main/res/menu/options_menu.xml" value="0.5" />
       </map>
     </option>
   </component>

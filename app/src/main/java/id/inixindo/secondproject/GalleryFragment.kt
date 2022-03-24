@@ -11,7 +11,6 @@ import androidx.core.graphics.BlendModeCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
-import kotlinx.android.synthetic.main.fragment_gallery.*
 import kotlinx.android.synthetic.main.fragment_gallery.view.*
 
 class GalleryFragment : Fragment() {
@@ -68,13 +67,5 @@ class GalleryFragment : Fragment() {
         }.attach()
 
         return view
-
     }
-
-//    fun replaceVacationFragment() {
-//        val vacationFragment = VacationFragment()
-//        val transaction = requireActivity().supportFragmentManager.beginTransaction()
-//        transaction.replace(R.id.tab_layout, vacationFragment).commit()
-//    }
-
 }

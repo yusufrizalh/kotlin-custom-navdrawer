@@ -1,11 +1,14 @@
 package id.inixindo.secondproject
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -94,5 +97,26 @@ class MainActivity : AppCompatActivity() {
         adapter = NavigationRVAdapter(items, highlightItemPos)
         navigation_rv.adapter = adapter
         adapter.notifyDataSetChanged()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.options_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.option_search) {
+            Toast.makeText(this, "Search is selected", Toast.LENGTH_SHORT).show()
+        } else if (item.itemId == R.id.option_settings) {
+            Toast.makeText(this, "Settings is selected", Toast.LENGTH_SHORT).show()
+        } else if (item.itemId == R.id.option_status) {
+            Toast.makeText(this, "Status is selected", Toast.LENGTH_SHORT).show()
+        } else if (item.itemId == R.id.option_database) {
+            // membuka activity untuk mengelola database
+            startActivity(Intent(this, DatabaseActivity::class.java))
+        } else {
+            Toast.makeText(this, "None is selected", Toast.LENGTH_SHORT).show()
+        }
+        return true
     }
 }
