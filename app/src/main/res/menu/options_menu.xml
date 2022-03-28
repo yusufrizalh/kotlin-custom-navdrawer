@@ -21,5 +21,10 @@
         android:icon="@drawable/icon_storage"
         android:title="Database"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/option_gmaps"
+        android:icon="@drawable/icon_location_black"
+        android:title="GMaps"
+        app:showAsAction="never" />
 
 </menu>

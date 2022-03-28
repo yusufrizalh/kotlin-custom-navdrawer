@@ -3,6 +3,8 @@
     package="id.inixindo.secondproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -11,9 +13,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SecondProject">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDR3bTv7DMg-jM-wC8SfyCTLQWW8A1eQs0" />
+
+        <activity
+            android:name=".MapsFragment"
+            android:exported="true" />
         <activity
             android:name=".MaterialDetailActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MaterialAddActivity"
             android:exported="true"

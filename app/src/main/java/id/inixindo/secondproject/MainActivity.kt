@@ -114,6 +114,8 @@ class MainActivity : AppCompatActivity() {
         } else if (item.itemId == R.id.option_database) {
             // membuka activity untuk mengelola database
             startActivity(Intent(this, DatabaseActivity::class.java))
+        } else if (item.itemId == R.id.option_gmaps) {
+            startActivity(Intent(this, MapsFragment::class.java))
         } else {
             Toast.makeText(this, "None is selected", Toast.LENGTH_SHORT).show()
         }
